@@ -5,15 +5,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity // This tells Hibernate to make a table out of this class
+@Entity
 public class Employee {
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Integer id;
 
-    private String name;
+	private String name;
 
-    private String email;
+	private String email;
+
+	private Long salary;
 
 	public Integer getId() {
 		return id;
@@ -39,5 +41,12 @@ public class Employee {
 		this.email = email;
 	}
 
+	public Long getSalary() {
+		return salary;
+	}
+
+	public void setSalary(Long salary) {
+		this.salary = salary;
+	}
 
 }
