@@ -9,7 +9,7 @@
 
 This guide walks you through the process of creating a Spring application connected with a MySQL Database, as opposed to an in-memory, embedded database, which all of the other guides and many sample apps use. It uses Spring Data JPA to access the database, but this is only one of many possible choices (e.g. you could use plain Spring JDBC).
 
-== What you'll build
+== What you'll build - yes
 
 You'll create a MySQL database, build a Spring application and connect it with the newly created database.
 
